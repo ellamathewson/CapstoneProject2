@@ -29,10 +29,9 @@
     </div>
 </nav>
 
-  <div id="content"></div>
+  <div id="content">
   <div class="entryForm">
         <h3>Sign Up</h3>
-        <div >
         <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
           <input class="textBox" id="user" type="text" name="username" placeholder="Username"/>
           <input class="textBox" id="pass" type="password" name="pass" placeholder="Password"/>
@@ -40,10 +39,9 @@
           <a href="app.html" class="formSubmit">Submit</a>
         </form>
           <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div>
-        </div>
       </div>
   <div class="alert alert-danger" role="alert" id="error"> Error: Username and Password required </div>
-
+</div>
   <script>     
       // hamburger menu functionality when screen is smaller
       function openHamburgerMenu() {

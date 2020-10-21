@@ -240,7 +240,11 @@
  
  */
  #loginForm, #signupForm {
-   margin-top: 10vh; }
+   margin-top: 10vh; 
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+  }
  
  /*
  
@@ -413,11 +417,13 @@
        width: 60%;
        margin: 5% 20%;
        padding: 1em;
+       text-align: center;
    }
  
    .formSubmit:hover {
      background-color: #62BEC1;
      cursor: pointer;
+     text-decoration: none;
    }
  
    .epipenAd {
