@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
   <link rel="shortcut icon" href="/assets/img/peanutFavicon.png" />
-  <link rel="stylesheet" type="text/css" href="/stylesheet.css"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 
   <!-- Bootstrap core CSS -->
   <link href="/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,8 @@
         <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
           <input class="textBox" id="user" type="text" name="username" placeholder="Username"/>
           <input class="textBox" id="pass" type="password" name="pass" placeholder="Password"/>
-          <input class="formSubmit" type="submit" value="Sign Up" />
+          <!-- <input class="formSubmit" type="submit" value="Sign Up" /> -->
+          <a href="app.html" class="formSubmit">Submit</a>
         </form>
           <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div>
         </div>
@@ -44,6 +45,9 @@
   <div class="alert alert-danger" role="alert" id="error"> Error: Username and Password required </div>
 
   <script>
+      function takeToPage() {
+        window.location.href = "http://127.0.0.1:5500/app.html";
+      }
       
       // hamburger menu functionality when screen is smaller
       function openHamburgerMenu() {
