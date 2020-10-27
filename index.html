@@ -8,7 +8,7 @@
 
   <title>Allergy Attention</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="newStylesheet.css" />
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -20,16 +20,20 @@
 
 <body>
   <!-- Navigation -->
-<nav>
-<div class="topnav" id="myTopnav">
-  <a id="title">Allergy Attention</a>
-  <a href="signin.html">Login</a>
-  <a href="index.html" class="active">Signup</a>
-  <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
-    <img class="hamburger" src="/menu.png">
-  </a>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- insert logo here -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Allergy Attention <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
 
   <!-- Page Content -->
   <content>
@@ -37,16 +41,22 @@
 
     <!-- Side Widget -->
     <div class="entryForm">
-      <h3>Sign Up</h3>
+      <h3>Sign In</h3>
       <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
-        <input class="textBox" id="user" type="text" name="username" placeholder="Username"/>
-        <input class="textBox" id="pass" type="password" name="pass" placeholder="Password"/>
-        <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Retype password"/>
+        <p class="formTitle">Username:</p>
+        <input class="textBox" id="user" type="text" name="username"/>
+        <p class="formTitle">Password: </p>
+        <input class="textBox" id="pass" type="password" name="pass"/>
+
+        <!-- <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Retype password"/> -->
         <!-- <input type="hidden" name="_csrf" value={{csrfToken}} /> -->
         <!-- <input class="formSubmit" type="submit" id="signupSub" value="Sign Up" /> -->
-        <a href="app.html" class="formSubmit">Submit</a>
+        <div id="buttonDiv">
+          <a href="app.html" class="formSubmit buttonActive">Sign In</a>
+          <a href="signin.html" class="formSubmit">Sign Up</a>
+        </div>
       </form>
-        <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div>
+        <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
     </div>
 
     </content>
