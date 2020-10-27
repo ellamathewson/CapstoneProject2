@@ -9,6 +9,8 @@ nav {
     border-bottom: 2px solid gray !important;
 }
 
+
+/* LOGIN AND SIGNIN PAGES */
 a {
     font-weight: 700;
 }
@@ -78,4 +80,9 @@ h3 {
 
 .buttonActive:hover {
     text-decoration: none;
+}
+
+/* APP PAGE */
+.addButton {
+    background-color: #007F97;
 }
