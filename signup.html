@@ -1,48 +1,73 @@
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Allergy Attention user signup form">
+  <meta name="author" content="Ella Mathewson">
+
   <title>Allergy Attention</title>
-  <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
-  <link rel="shortcut icon" href="/assets/img/peanutFavicon.png" />
-  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="newStylesheet.css" />
 
   <!-- Bootstrap core CSS -->
-  <link href="/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- Bootstrap Template from https://getbootstrap.com/docs/4.0/components/alerts/ -->
 </head>
-<body>  
-  <nav>
-    <div class="topnav" id="myTopnav">
-      <a id="title">Allergy Attention</a>
-      <a href="/signin.html" class="active" id="loginButton" onClick="displayLogin()">Login</a>
-      <a href="index.html" id="signupButton" onClick="displaySignup()">Signup</a>
-      <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
-        <img class="hamburger" src="/menu.png">
-      </a>
-    </div>
-</nav>
 
-  <div id="content">
-  <div class="entryForm">
-        <h3>Sign Up</h3>
-        <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
-          <input class="textBox" id="user" type="text" name="username" placeholder="Username"/>
-          <input class="textBox" id="pass" type="password" name="pass" placeholder="Password"/>
-          <!-- <input class="formSubmit" type="submit" value="Sign Up" /> -->
-          <a href="app.html" class="formSubmit">Submit</a>
-        </form>
-          <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- insert logo here -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Allergy Attention <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
       </div>
-  <div class="alert alert-danger" role="alert" id="error"> Error: Username and Password required </div>
-</div>
-  <script>     
+    </nav>
+
+
+  <!-- Page Content -->
+  <content>
+    <!-- Sidebar Widgets Column -->
+
+    <!-- Side Widget -->
+    <div class="entryForm">
+      <h3>Sign Up</h3>
+      <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
+        <p class="formTitle">Username:</p>
+        <input class="textBox" id="user" type="text" name="username"/>
+        <p class="formTitle">Password: </p>
+        <input class="textBox" id="pass" type="password" name="pass"/>
+        <p class="formTitle">Retype Password: </p>
+        <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Retype password"/>
+        <!-- <input type="hidden" name="_csrf" value={{csrfToken}} /> -->
+        <!-- <input class="formSubmit" type="submit" id="signupSub" value="Sign Up" /> -->
+        <div id="buttonDiv">
+          <a href="index.html" class="formSubmit">Sign In</a>
+          <a href="app.html" class="formSubmit buttonActive">Sign Up</a>
+        </div>
+      </form>
+        <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
+    </div>
+
+    </content>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/assets/bundle.js"></script>
+
+    <script>
+      var form = document.getElementById("form-id");
+
       // hamburger menu functionality when screen is smaller
       function openHamburgerMenu() {
       var x = document.getElementById("myTopnav");
@@ -52,30 +77,6 @@
         x.className = "topnav";
       }
     }
-
-    function displayLogin() {
-      console.log('display login');
-      if($('#signupButton').hasClass('active')) {
-        $('#signupButton').removeClass('active');
-        $('#loginButton').addClass('active');
-      }
-    }
-
-    function displaySignup() {
-      console.log('display sugnup');
-      if($('#loginButton').hasClass('active')) {
-        $('#loginButton').removeClass('active');
-        $('#signupButton').addClass('active');
-      }
-    }
-    
-    
-  </script>
-
+    </script>
 </body>
 </html>
-
-<!-- 
-   $('#signupForm').removeClass('active');
-        $('#loginForm').addClass('active');
--->
