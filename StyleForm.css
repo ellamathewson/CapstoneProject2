@@ -164,10 +164,32 @@ h3 {
 .addFoodForm {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+}
 
+#listed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
 }
 
 #inputPassword2 {
     border-radius: 50px !important;
     background-color: #F2F2F2 !important;
+}
+
+.ingredItem {
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    width: 10%;
+    padding: 1em;
+    text-align: center;
+}
+
+.ingredItem:hover {
+    background-color: red;
 }
