@@ -7,7 +7,7 @@
   <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="newStylesheet.css"/>
+  <link rel="stylesheet" type="text/css" href="StyleForm.css"/>
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,9 @@
 </head>
 
 <body>
+  <div id="accountContainer">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="headerBar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,9 +44,9 @@
 
 
   <!-- Page Content -->
-<content class="appPage">
 
 <!-- Sidebar Widgets Column -->
+<div id="leftGrid">
     <div class="sidebar">
        <div class="addForm">
        <h3>Add Food</h3>
@@ -86,7 +87,9 @@
             </form>
       </div> -->
   </div>  
+</div>
 
+  <div id="mainGrid">
     <div class="main">
     <!-- Blog Entries Column -->
     <div id="posts">
@@ -102,9 +105,10 @@
         </div>
       </section>
   </div>
+</div>
 </div>  
+</div>
 
-  </content>
   <!-- /.container -->
 
   <div id="errorModal">

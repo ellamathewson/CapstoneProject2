@@ -8,7 +8,7 @@
 
   <title>Allergy Attention</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="newStylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="StyleForm.css" />
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -19,8 +19,9 @@
 </head>
 
 <body>
+  <div id="gridContainer">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="headerBar">
     <!-- insert logo here -->
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +31,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Allergy Attention <span class="sr-only">(current)</span></a>
           </li>
-        </ul>
+        </ul> 
       </div>
     </nav>
 
@@ -40,6 +41,7 @@
     <!-- Sidebar Widgets Column -->
 
     <!-- Side Widget -->
+    <div id="mainGrid">
     <div class="entryForm">
       <h3>Sign In</h3>
       <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
@@ -58,9 +60,11 @@
       </form>
         <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
     </div>
+  </div>
 
     </content>
     <!-- /.container -->
+  </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="/assets/bundle.js"></script>
