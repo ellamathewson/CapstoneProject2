@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
   <link rel="shortcut icon" href="/assets/img/peanutFavicon.png" />
   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  <link rel="stylesheet" type="text/css" href="StyleForm.css"/>
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -22,7 +23,8 @@
 </head>
 
 <body>
-<nav>
+  <div id="gridContainer">
+<nav id="headerBar">
 <div class="topnav" id="myTopnav">
     <a id="title">Allergy Attention</a>
     <a href="index.html">Home</a>
@@ -36,6 +38,7 @@
 </nav>
 
 <!-- Page Content -->
+<div id="leftGrid" style="display:none">
 <content class="appPage">
 <!-- Sidebar Widgets Column -->
     <div class="sidebar" style="display:none">
@@ -52,8 +55,11 @@
         </div>
     </div>
   </div>  
+</div>
 
   <!-- Sidebar listing out data -->
+  
+<div id="mainGrid">
   <div class="main">
     <br>
     <h3>About:</h3>
@@ -83,8 +89,10 @@
     
     <!-- Blog Entries Column -->
   </div>  
+  </div>
 </content>
   <!-- /.container -->
+  </div>
 
   <script>
     // sets up donut chart using chart.js

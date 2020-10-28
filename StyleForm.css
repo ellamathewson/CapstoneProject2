@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+
+/* LOGIN AND SIGNIN PAGES */
+a {
+    font-weight: 700;
+}
+
+/* Grid Alignment Webpage*/
+#leftGrid{ grid-area: leftmost; }
+#mainGrid{ grid-area: main; }
+#headerBar { grid-area: header;}
+
+#gridContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    
+    /* #grid templates are the best */
+    grid-template-areas:
+    'header'
+    'main'
+    'main'; /* mostly to leave room for a footer if we wanted to work on error messages */
+
+    grid-template-rows: 8vh auto;
+  }
+
+  #accountContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    
+    grid-template-areas:
+    'header header header header'
+    'leftmost main main main'
+    'leftmost main main main';
+  
+    grid-template-rows: 8vh auto;
+    grid-template-columns: minmax(auto, 250px) auto;
+  }
+
+/* Header */
+
+#headerBar { 
+    height: 8vh;
+    min-height: 50px;
+    margin: 0;
+}
+
+nav {
+    border-bottom: 2px solid gray !important;
+}
+
+/* Left Grid */
+
+#leftGrid{ 
+    padding: 20px;
+}
+
+/* Main */
+
+#mainGrid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.main{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.entryForm {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 5% !important;
+    color: #79426A !important;
+    font-weight: 700 !important;
+}
+
+.formTitle {
+    color: gray;
+}
+
+.textBox {
+    background: lightgrey;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin: 1em 0;
+    height: 50px;
+}
+
+#buttonDiv {
+    margin-top: 2em;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formSubmit {
+    border: 2px solid #007F97;
+    border-radius: 80px;
+    padding: 2em;
+    min-width: 110px;
+    height: 80px;
+    text-align: center;
+    vertical-align: center;
+    color: #007F97;
+}
+
+.buttonActive {
+    border: none;
+    background-color: #007F97;
+    color: white;
+}
+
+.formSubmit:hover {
+    text-decoration: none;
+    background-color: #007F97;
+    color: white;
+}
+
+.buttonActive:hover {
+    text-decoration: none;
+}
+
+/* APP PAGE */
+.addButton {
+    background-color: #007F97;
+}
