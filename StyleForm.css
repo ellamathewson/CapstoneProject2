@@ -153,3 +153,21 @@ h3 {
 .addButton {
     background-color: #007F97;
 }
+
+.addIngredientButton {
+    background-color: #BFE8F0 !important;
+    border: none !important;
+    color: black !important;
+    box-shadow: none !important;
+}
+
+.addFoodForm {
+    display: flex;
+    justify-content: center;
+
+}
+
+#inputPassword2 {
+    border-radius: 50px !important;
+    background-color: #F2F2F2 !important;
+}
