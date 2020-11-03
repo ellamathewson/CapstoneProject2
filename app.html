@@ -57,8 +57,24 @@
             <button type="button" class="btn btn-primary addButton" data-toggle="modal" data-target="#exampleModal">Add Meal</button>
 
         </div>
+        <p id=remTap>Tap to remove ingredient(s)</p>
         <div id=mealCards class=card>
+            <div class="main">
+                <!-- Blog Entries Column -->
+                <div id="posts">
+                    <h1>Allergy Attention</h1>
+                    <!-- Blog Post -->
+                    <div class="tag" onclick="removeSearch()">
+                        <h5>Tag</h5>
+                    </div>
 
+                    <section id="meals">
+                        <div className="mealList">
+                            <h3 className="empty">No Meals Yet</h3>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
 
         <!-- Modal -->
@@ -103,24 +119,6 @@
     </div> -->
     </div>
 
-    <div id="mainGrid">
-        <div class="main">
-            <!-- Blog Entries Column -->
-            <div id="posts">
-                <h1>Allergy Attention</h1>
-                <!-- Blog Post -->
-                <div class="tag" onclick="removeSearch()">
-                    <h5>Tag</h5>
-                </div>
-
-                <section id="meals">
-                    <div className="mealList">
-                        <h3 className="empty">No Meals Yet</h3>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
 
     <!-- /.container -->
 
