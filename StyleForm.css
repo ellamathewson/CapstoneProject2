@@ -47,6 +47,12 @@ a {
 #accountContainer {
     height: 100vh;
     width: 100vw;
+    display: grid;
+    /* #grid templates are the best */
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'main';
     background-color: #F4F4F4;
 }
 
@@ -58,7 +64,7 @@ a {
     min-height: 50px;
     margin: 0;
     background-color: #79426A;
-    color: white
+    border-radius: 0;
 }
 
 nav {
@@ -108,14 +114,19 @@ h3 {
 
 .formTitle {
     color: gray;
+    margin: 0;
 }
 
 .textBox {
     background: lightgrey;
     border: none;
-    border-bottom: 2px solid gray;
+    border-radius: 50px;
     margin: 1em 0;
     height: 50px;
+    padding: 0 25px;
+}
+.textBox:focus{
+    outline:none;
 }
 
 #buttonDiv {
@@ -237,8 +248,14 @@ h3 {
     text-align: center;
 }
 
+/* Tablet */
+
+@media screen and (max-width: 1000px) {
+    
+}
+
 /* Mobile */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     
 }

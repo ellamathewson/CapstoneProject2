@@ -322,6 +322,7 @@
  a {
      text-decoration: none;
  }
+
  
  .topnav {
      overflow: hidden;
@@ -341,7 +342,7 @@
    }
  
    #title:hover {
-     background-color: black;
+     background-color: #79426A;
      color: white;
      text-decoration: none;
      cursor: default;

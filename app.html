@@ -8,6 +8,7 @@
     <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <link rel="stylesheet" type="text/css" href="StyleForm.css" />
 
     <!-- Bootstrap core CSS -->
@@ -21,7 +22,22 @@
 <body>
     <div id="accountContainer">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="headerBar">
+        
+        <nav id="headerBar">
+            <div class="topnav" id="myTopnav">
+                <a id="title">Allergy Attention</a>
+                <a href="app.html">Home</a>
+                <a href="account.html">Account</a>
+                <a href="data.html" class="active">Data</a>
+                <a href="index.html">Logout</a>
+                <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
+                    <img class="hamburger" src="/menu.png">
+                </a>
+            </div>
+        </nav>
+        <!-- If someone wants to mess with this be my guest -->
+        
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark" id="headerBar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +57,8 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+
 
 
         <!-- Page Content -->
