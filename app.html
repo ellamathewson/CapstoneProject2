@@ -1,231 +1,220 @@
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>Allergy Attention</title>
-  <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="StyleForm.css"/>
 
-  <!-- Bootstrap core CSS -->
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <!-- Bootstrap Template from https://getbootstrap.com/docs/4.0/components/alerts/ -->
+<head>
+    <meta charset="utf-8" />
+    <title>Allergy Attention</title>
+    <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleForm.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Template from https://getbootstrap.com/docs/4.0/components/alerts/ -->
 </head>
 
 <body>
-  <div id="accountContainer">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="headerBar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div id="accountContainer">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="headerBar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
-  <!-- Page Content -->
+        <!-- Page Content -->
 
-<!-- Sidebar Widgets Column -->
-<div id="leftGrid">
-    <div class="sidebar">
-       <div class="addForm">
-       <h3>Add Food</h3>
-        
-       <!-- Button trigger modal -->
-       <button type="button" class="btn btn-primary addButton" data-toggle="modal" data-target="#exampleModal">
-          Add Meal
-        </button>
-      </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary addButton" data-toggle="modal" data-target="#exampleModal">Add Meal</button>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Make Tracking Allergins Easier</h5>
-                  
-              </div>
-              <div class="modal-body addFoodForm">
-                  <form class="form-inline">
-                      <div class="form-group mx-sm-3 mb-2">
-                        <input type="password" class="form-control" id="inputPassword2">
-                      </div>
-                      <button type="submit" class="btn btn-primary mb-2 addIngredientButton">&#8592;</button>
-                    </form>
-                    <div id="listed">
-                        <p>Tap to remove ingredients:</p>
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Make Tracking Allergins Easier</h5>
 
-                        <div id="listedIngred">
-                          <button class="ingredItem">Milk</button>
-                          <button class="ingredItem">Eggs</button>
+                    </div>
+                    <div class="modal-body addFoodForm">
+                        <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input type="password" class="form-control" id="inputPassword2">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2 addIngredientButton">&#8592;</button>
+                        </form>
+                        <div id="listed">
+                            <p>Tap to remove ingredients:</p>
+
+                            <div id="listedIngred">
+                                <button class="ingredItem">Milk</button>
+                                <button class="ingredItem">Eggs</button>
+                            </div>
                         </div>
                     </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
-      <!-- Search Widget -->
-      <!-- <div class="search">
-        <h3>Search</h3>
-          <form class="searchBar" name="searchForm" method="GET">
-            <input type="text" class="form-control" id="searchInput" placeholder="Search for...">
-            <button class="formSubmit" type="button" onclick="searchData()">Go</button>
-            </form>
-      </div> -->
-  </div>  
-</div>
-
-  <div id="mainGrid">
-    <div class="main">
-    <!-- Blog Entries Column -->
-    <div id="posts">
-      <h1>Allergy Attention</h1>
-      <!-- Blog Post -->
-      <div class="tag" onclick="removeSearch()">
-        <h5>Tag</h5>
-      </div>
-      
-      <section id="meals">
-        <div className="mealList">
-            <h3 className="empty">No Meals Yet</h3>
-        </div>
-      </section>
-  </div>
-</div>
-</div>  
-</div>
-
-  <!-- /.container -->
-
-  <div id="errorModal">
-    <div class="modal fade" id="searchEmpty" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="searchEmptyLabel">Error: No results for ${input} found</h5>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" onclick="removeSearch()">Okay</button>
-        </div> 
-      </div>
+        <!-- Search Widget -->
+        <!-- <div class="search">
+      <h3>Search</h3>
+        <form class="searchBar" name="searchForm" method="GET">
+          <input type="text" class="form-control" id="searchInput" placeholder="Search for...">
+          <button class="formSubmit" type="button" onclick="searchData()">Go</button>
+          </form>
+    </div> -->
     </div>
+
+    <div id="mainGrid">
+        <div class="main">
+            <!-- Blog Entries Column -->
+            <div id="posts">
+                <h1>Allergy Attention</h1>
+                <!-- Blog Post -->
+                <div class="tag" onclick="removeSearch()">
+                    <h5>Tag</h5>
+                </div>
+
+                <section id="meals">
+                    <div className="mealList">
+                        <h3 className="empty">No Meals Yet</h3>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    const searchData = () => {
-      // grabs searchbar input
-        let input = document.getElementById("searchInput").value;
+    <!-- /.container -->
 
-        input = input.toLowerCase();
-        input = input.trim();
+    <div id="errorModal">
+        <div class="modal fade" id="searchEmpty" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchEmptyLabel">Error: No results for ${input} found</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="removeSearch()">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        //grabs tag element
-        let tag = document.querySelector(".tag");
+    <script>
+        const searchData = () => {
+            // grabs searchbar input
+            let input = document.getElementById("searchInput").value;
 
-        // grabs all the cards on screen
-        let cardElements = document.querySelectorAll(".card");
+            input = input.toLowerCase();
+            input = input.trim();
 
-        let itemsDisplaying = false;
+            //grabs tag element
+            let tag = document.querySelector(".tag");
 
-        //for each card,
-        cardElements.forEach(card => {
-          //if title matches input, display and show tag
-          let title = card.querySelector("h2").innerHTML;
-          title = title.toLowerCase();
+            // grabs all the cards on screen
+            let cardElements = document.querySelectorAll(".card");
 
-          let ingred = card.querySelector("#ingred").innerHTML;
-          ingred = ingred.toLowerCase();
-          ingred = ingred.split(",");
+            let itemsDisplaying = false;
 
-          ingred.forEach(item => {
-            item = item.trim();
-              if (title == input) {
-              itemsDisplaying = true;
-              card.style.display = "block";
-              tag.querySelector("h5").innerHTML = input;
-              tag.style.display = "block";
-            //if not, set the display to none
-            } else if (item == input) {
-                itemsDisplaying = true;
-                console.log(card);
-                card.style.display = "block";
-                tag.querySelector("h5").innerHTML = input;
-                tag.style.display = "block";
-            } else {
-              card.style.display = "none";
+            //for each card,
+            cardElements.forEach(card => {
+                //if title matches input, display and show tag
+                let title = card.querySelector("h2").innerHTML;
+                title = title.toLowerCase();
+
+                let ingred = card.querySelector("#ingred").innerHTML;
+                ingred = ingred.toLowerCase();
+                ingred = ingred.split(",");
+
+                ingred.forEach(item => {
+                    item = item.trim();
+                    if (title == input) {
+                        itemsDisplaying = true;
+                        card.style.display = "block";
+                        tag.querySelector("h5").innerHTML = input;
+                        tag.style.display = "block";
+                        //if not, set the display to none
+                    } else if (item == input) {
+                        itemsDisplaying = true;
+                        console.log(card);
+                        card.style.display = "block";
+                        tag.querySelector("h5").innerHTML = input;
+                        tag.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+
+            if (itemsDisplaying == false) {
+                console.log("nothing on screen");
+                $('#searchEmpty').modal('show');
             }
-          });
-        });
+        }
 
-        if (itemsDisplaying == false) {
-            console.log("nothing on screen");
-            $('#searchEmpty').modal('show');
-          }
-    } 
+        const removeSearch = () => {
+            $('#searchEmpty').modal('hide');
+            let tag = document.querySelector(".tag");
 
-    const removeSearch = () => {
-      $('#searchEmpty').modal('hide');
-      let tag = document.querySelector(".tag");
+            let cardElements = document.querySelectorAll(".card");
 
-      let cardElements = document.querySelectorAll(".card");
+            cardElements.forEach(card => {
+                card.style.display = "block";
+                tag.style.display = "none";
+            });
+        }
 
-        cardElements.forEach(card => {
-          card.style.display = "block";
-          tag.style.display = "none";
-        });
-    }
-
-    const showData = () => {
-      window.location.href="/data";
-    }
-  </script>
+        const showData = () => {
+            window.location.href = "/data";
+        }
+    </script>
 
     <!-- <script src="/assets/appBundle.js"></script> -->
 
     <script>
-      function openHamburgerMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+        function openHamburgerMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
     <style>
-      /* @media screen and (min-width: 375px) {
-        body {
-          background-color: lightblue;
-        }
-      } */
-    
+        /* @media screen and (min-width: 375px) {
+      body {
+        background-color: lightblue;
+      }
+    } */
     </style>
 </body>
 

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 * {
     font-family: 'Inter', Helvetica, sans-serif;
     font-weight: 400;
@@ -11,6 +10,7 @@ nav {
 
 
 /* LOGIN AND SIGNIN PAGES */
+
 a {
     font-weight: 700;
 }
@@ -82,7 +82,9 @@ h3 {
     text-decoration: none;
 }
 
+
 /* APP PAGE */
+
 .addButton {
     background-color: #007F97;
 }

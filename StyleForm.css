@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 * {
     font-family: 'Inter', Helvetica, sans-serif;
     font-weight: 400;
@@ -11,62 +10,68 @@
 }
 
 
-
 /* LOGIN AND SIGNIN PAGES */
+
 a {
     font-weight: 700;
 }
 
+
 /* Grid Alignment Webpage*/
-#leftGrid{ grid-area: leftmost; }
-#mainGrid{ grid-area: main; }
-#headerBar { grid-area: header;}
+
+#leftGrid {
+    grid-area: leftmost;
+}
+
+#mainGrid {
+    grid-area: main;
+}
+
+#headerBar {
+    grid-area: header;
+}
 
 #gridContainer {
     height: 100vh;
     width: 100vw;
     display: grid;
-    
     /* #grid templates are the best */
-    grid-template-areas:
-    'header'
-    'main'
-    'main'; /* mostly to leave room for a footer if we wanted to work on error messages */
-
+    grid-template-areas: 'header' 'main' 'main';
+    /* mostly to leave room for a footer if we wanted to work on error messages */
     grid-template-rows: 8vh auto;
-  }
+}
 
-  #accountContainer {
+#accountContainer {
     height: 100vh;
     width: 100vw;
     display: grid;
-    
-    grid-template-areas:
-    'header header header header'
-    'leftmost main main main'
-    'leftmost main main main';
-  
+    grid-template-areas: 'header header header header' 'leftmost main main main' 'leftmost main main main';
     grid-template-rows: 8vh auto;
     grid-template-columns: minmax(auto, 250px) auto;
-  }
+}
+
 
 /* Header */
 
-#headerBar { 
+#headerBar {
     height: 8vh;
     min-height: 50px;
     margin: 0;
+    background-color: #79426A;
+    color: white
 }
 
 nav {
     border-bottom: 2px solid gray !important;
 }
 
+
 /* Left Grid */
 
-#leftGrid{ 
+#leftGrid {
     padding: 20px;
 }
+
 
 /* Main */
 
@@ -77,11 +82,12 @@ nav {
     height: 100%;
 }
 
-.main{
+.main {
     padding: 20px;
     width: 100%;
     height: 100%;
 }
+
 .entryForm {
     display: flex;
     flex-direction: column;
@@ -149,7 +155,9 @@ h3 {
     text-decoration: none;
 }
 
+
 /* APP PAGE */
+
 .addButton {
     background-color: #007F97;
 }
