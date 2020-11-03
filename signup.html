@@ -46,16 +46,17 @@
       <h3>Sign Up</h3>
       <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
         <p class="formTitle">Username:</p>
-        <input class="textBox" id="user" type="text" name="username"/>
+        <input class="textBox" id="user" type="text" name="username" placeholder="Enter Username"/>
         <p class="formTitle">Password: </p>
-        <input class="textBox" id="pass" type="password" name="pass"/>
+        <input class="textBox" id="pass" type="password" name="pass" placeholder="Enter Password"/>
         <p class="formTitle">Retype Password: </p>
-        <input class="textBox" id="pass2" type="password" name="pass2"/>
+        <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Re-enter Password"/>
         <!-- <input type="hidden" name="_csrf" value={{csrfToken}} /> -->
         <!-- <input class="formSubmit" type="submit" id="signupSub" value="Sign Up" /> -->
         <div id="buttonDiv">
-          <a href="index.html" class="formSubmit">Sign In</a>
-          <a href="app.html" class="formSubmit buttonActive">Sign Up</a>
+          <a href="index.html" class="formSubmit">LOG IN</a>
+          <a href="app.html" class="formSubmit buttonActive">SIGN UP</a>
+          <p class="formTitle" href="#"> Forgot Password?</p>
         </div>
       </form>
         <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
