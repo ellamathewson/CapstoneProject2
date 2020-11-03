@@ -36,7 +36,10 @@ a {
     width: 100vw;
     display: grid;
     /* #grid templates are the best */
-    grid-template-areas: 'header' 'main' 'main';
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'main';
     /* mostly to leave room for a footer if we wanted to work on error messages */
     grid-template-rows: 8vh auto;
 }
@@ -68,6 +71,13 @@ nav {
 
 
 /* Left Grid */
+
+#mainGrid {	
+    display: flex;	
+    justify-content: center;	
+    align-content: center;	
+    height: 100%;	
+}
 
 .main {
     padding: 20px;
@@ -225,4 +235,10 @@ h3 {
     color: #9F9f9f;
     align-items: center;
     text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    
 }
