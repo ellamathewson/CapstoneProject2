@@ -44,10 +44,7 @@ a {
 #accountContainer {
     height: 100vh;
     width: 100vw;
-    display: grid;
-    grid-template-areas: 'header header header header' 'leftmost main main main' 'leftmost main main main';
-    grid-template-rows: 8vh auto;
-    grid-template-columns: minmax(auto, 250px) auto;
+    background-color: #F4F4F4;
 }
 
 
@@ -65,22 +62,12 @@ nav {
     border-bottom: 2px solid gray !important;
 }
 
+#posts {
+    color: black;
+}
+
 
 /* Left Grid */
-
-#leftGrid {
-    padding: 20px;
-}
-
-
-/* Main */
-
-#mainGrid {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
 
 .main {
     padding: 20px;
@@ -200,4 +187,33 @@ h3 {
 
 .ingredItem:hover {
     background-color: red;
+}
+
+
+/* cards */
+
+.card {
+    margin: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#mealCards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card input,
+.card p {
+    background-color: #f2f2f2;
+    border-radius: 26px;
+    padding: 7px;
+}
+
+.card input,
+#addIngButt {
+    display: inline-block;
 }
