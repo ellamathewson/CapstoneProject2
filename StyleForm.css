@@ -271,14 +271,7 @@ h3 {
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 7px 20px 7px 15px;
-<<<<<<< HEAD
     max-height: 44px;
-=======
-    max-height: 35px;
-
-    position: relative;
-    left: 20px;
->>>>>>> 30e68d4091a937b04056c37355de387841fa0cf7
 }
 
 .card input:focus,
@@ -305,29 +298,7 @@ h3 {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .person{
-=======
-/* Tablet */
-
-@media screen and (max-width: 1000px) {}
-
-/* Mobile */
-
-@media screen and (max-width: 400px) {
-    .formTitle {
-        visibility: hidden;
-        height: 0;
-    }
-
-    #buttonDiv .formTitle {
-        visibility: visible;
-        height: inherit;
-    }
-}
-
-.person {
->>>>>>> 30e68d4091a937b04056c37355de387841fa0cf7
     position: absolute;
     left: 12vw;
     width: 200px;
