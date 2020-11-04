@@ -118,7 +118,7 @@ h3 {
 }
 
 .textBox {
-    background: lightgrey;
+    background: #f2f2f2;
     border: none;
     border-radius: 50px;
     margin: 10px 0 0;
@@ -284,4 +284,34 @@ h3 {
         visibility: visible;
         height: inherit;
     }
+}
+
+.person{
+    position: absolute;
+    left: 12vw;
+    width: 200px;
+    bottom: 0;
+}
+
+.egg{
+    position: absolute;
+    left: 0;
+    width: 400px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.milk{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bread{
+    position: absolute;
+    right: 4vw;
+    width: 300px;
+    bottom: 0;
 }
