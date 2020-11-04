@@ -69,10 +69,6 @@ a {
     border-radius: 0;
 }
 
-nav {
-    border-bottom: 2px solid gray !important;
-}
-
 #posts {
     color: black;
 }

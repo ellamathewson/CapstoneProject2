@@ -46,10 +46,6 @@ a {
   text-decoration: none;
 }
 
-.logo{
-  margin-top: 12px;
-}
-
 .topnav {
   overflow: hidden;
 }
@@ -376,6 +372,11 @@ content {
   flex-direction: column;
 }
 
+
+.logo {
+  float: left;
+}
+
 #login {
   width: 25vw;
   margin: 0 35vw;
@@ -384,7 +385,6 @@ content {
 .hamburger {
   width: 25px;
   margin: 0;
-  margin-top: 12px;
 }
 
 /*Hambuger menu icon*/
@@ -407,6 +407,7 @@ nav {
   background-color: #201E2A;
   color: white;
   font-size: 17px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 a {
@@ -416,8 +417,12 @@ a {
 
 .topnav {
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 100%;
+  float: right;
+  padding-top: 12px;
 }
+
+
 
 .topnav a {
   float: left;
@@ -481,6 +486,10 @@ a {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .topnav{
+    width: 100%;
   }
 }
 
