@@ -25,13 +25,17 @@
 
         <nav id="headerBar">
             <div class="topnav" id="myTopnav">
-                <a id="title">Allergy Attention</a>
+                <a class="logo" href="app.html" id="title">Allergy Attention</a>
                 <a href="app.html" class="active">Home</a>
                 <a href="account.html">Account</a>
                 <a href="data.html">Data</a>
                 <a href="index.html">Logout</a>
                 <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
-                    <img class="hamburger" src="/menu.png">
+                    <div class="hamburger">
+                        <div class="hambugerbar"></div>
+                        <div class="hambugerbar"></div>
+                        <div class="hambugerbar"></div>
+                    </div>
                 </a>
             </div>
         </nav>
@@ -67,7 +71,9 @@
                 <h2>Input ingredients from your meal</h2>
 
                 <div>
-                    <input style="margin-top: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="textbox" placeholder="add ingredient">
+                    <input
+                        style="margin-top: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 295px;"
+                        class="textbox" placeholder="add ingredient">
                     <button class=addIngButt>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-left"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
