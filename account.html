@@ -1,15 +1,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>Allergy Attention</title>
   <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
   <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-  <link rel="stylesheet" type="text/css" href="StyleForm.css"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="StyleForm.css" />
 
   <!-- Bootstrap core CSS -->
   <link href="/bootstrap.min.css" rel="stylesheet">
@@ -21,49 +21,49 @@
 
 <body>
   <div id="gridContainer">
-  <!-- Navigation -->
-<nav id="headerBar">
-  <div class="topnav" id="myTopnav" >
-    <a id="title">Allergy Attention</a>
-    <a href="app.html">Home</a>
-    <a href="account.html" class="active">Account</a>
-    <a href="data.html">Data</a>
-    <a href="index.html">Logout</a>
-    <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
-        <img class="hamburger" src="/menu.png">
-    </a>
-  </div>
-</nav>
+    <!-- Navigation -->
+    <nav id="headerBar">
+      <div class="topnav" id="myTopnav">
+        <a id="title">Allergy Attention</a>
+        <a href="app.html">Home</a>
+        <a href="account.html" class="active">Account</a>
+        <a href="data.html">Data</a>
+        <a href="index.html">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
+          <img class="hamburger" src="/menu.png">
+        </a>
+      </div>
+    </nav>
 
-  <!-- Page Content -->
-<div id="mainGrid">
-<content class="accountPage">
-<h1>Settings</h1>
-  <div class="account">
-    {{#if userInfo}}
-    <h2>Username: {{userInfo.username}}</h2>
-    {{/if}}
-  </div>
-  <br><br>
-  <div id="changePassForm"></div>
-  <div class="account">
-    {{#if userInfo}}
-    <h2 id="subLabel">Subscribed: {{userInfo.subscribed}}</h2>
-    {{/if}}
-  </div>
-  
-  <div id="changeSubscribe"></div>
-  </content>
-    <!-- /.container -->
+    <!-- Page Content -->
+    <div id="mainGrid">
+      <content class="accountPage">
+        <h1>Settings</h1>
+        <div class="account">
+          {{#if userInfo}}
+          <h2>Username: {{userInfo.username}}</h2>
+          {{/if}}
+        </div>
+        <br><br>
+        <div id="changePassForm"></div>
+        <div class="account">
+          {{#if userInfo}}
+          <h2 id="subLabel">Subscribed: {{userInfo.subscribed}}</h2>
+          {{/if}}
+        </div>
+
+        <div id="changeSubscribe"></div>
+      </content>
+      <!-- /.container -->
     </div>
-    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/assets/appBundle.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="/assets/appBundle.js"></script>
 
-    <script>
-      // hamburger menu functionality when screen is smaller
-      function openHamburgerMenu() {
+  <script>
+    // hamburger menu functionality when screen is smaller
+    function openHamburgerMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
@@ -71,7 +71,7 @@
         x.className = "topnav";
       }
     }
-    </script>
+  </script>
 </body>
 
 </html>

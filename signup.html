@@ -20,9 +20,9 @@
 
 <body>
   <div id="gridContainer">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark" id="headerBar">
-    <!-- insert logo here -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="headerBar">
+      <!-- insert logo here -->
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
@@ -36,51 +36,51 @@
     </nav>
 
 
-  <!-- Page Content -->
-  <content >
-    <!-- Sidebar Widgets Column -->
+    <!-- Page Content -->
+    <content>
+      <!-- Sidebar Widgets Column -->
 
-    <!-- Side Widget -->
-    <div id="mainGrid">
-    <div class="entryForm">
-      <h3>Sign Up</h3>
-      <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
-        <p class="formTitle">Username:</p>
-        <input class="textBox" id="user" type="text" name="username" placeholder="Enter Username"/>
-        <p class="formTitle">Password: </p>
-        <input class="textBox" id="pass" type="password" name="pass" placeholder="Enter Password"/>
-        <p class="formTitle">Retype Password: </p>
-        <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Re-enter Password"/>
-        <!-- <input type="hidden" name="_csrf" value={{csrfToken}} /> -->
-        <!-- <input class="formSubmit" type="submit" id="signupSub" value="Sign Up" /> -->
-        <div id="buttonDiv">
-          <a href="index.html" class="formSubmit">LOG IN</a>
-          <a href="app.html" class="formSubmit buttonActive">SIGN UP</a>
-          <p class="formTitle" href="#"> Forgot Password?</p>
+      <!-- Side Widget -->
+      <div id="mainGrid">
+        <div class="entryForm">
+          <h3>Sign Up</h3>
+          <form id="signupForm" name="signupForm" action="/signup" method="POST" class="mainForm">
+            <p class="formTitle">Username:</p>
+            <input class="textBox" id="user" type="text" name="username" placeholder="Enter Username" />
+            <p class="formTitle">Password: </p>
+            <input class="textBox" id="pass" type="password" name="pass" placeholder="Enter Password" />
+            <p class="formTitle">Retype Password: </p>
+            <input class="textBox" id="pass2" type="password" name="pass2" placeholder="Re-enter Password" />
+            <!-- <input type="hidden" name="_csrf" value={{csrfToken}} /> -->
+            <!-- <input class="formSubmit" type="submit" id="signupSub" value="Sign Up" /> -->
+            <div id="buttonDiv">
+              <a href="index.html" class="formSubmit">LOG IN</a>
+              <a href="app.html" class="formSubmit buttonActive">SIGN UP</a>
+              <p class="formTitle" href="#"> Forgot Password?</p>
+            </div>
+          </form>
+          <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
         </div>
-      </form>
-        <!-- <div class="alert alert-danger" role="alert" id="error"> Error: All fields are required </div> -->
-    </div>
-  </div>
+      </div>
 
     </content>
     <!-- /.container -->
   </div>
 
-    <!--SVG images-->
-    <img src="imgs/person.svg" class="person" alt="person">
-    <img src="imgs/egg.svg" class="egg" alt="egg">
-    <img src="imgs/bread.svg" class="bread" alt="bread">
-    <img src="imgs/milk.svg" class="milk" alt="milk">
+  <!--SVG images-->
+  <img src="imgs/person.svg" class="person" alt="person">
+  <img src="imgs/egg.svg" class="egg" alt="egg">
+  <img src="imgs/bread.svg" class="bread" alt="bread">
+  <img src="imgs/milk.svg" class="milk" alt="milk">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/assets/bundle.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="/assets/bundle.js"></script>
 
-    <script>
-      var form = document.getElementById("form-id");
+  <script>
+    var form = document.getElementById("form-id");
 
-      // hamburger menu functionality when screen is smaller
-      function openHamburgerMenu() {
+    // hamburger menu functionality when screen is smaller
+    function openHamburgerMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
@@ -88,6 +88,7 @@
         x.className = "topnav";
       }
     }
-    </script>
+  </script>
 </body>
+
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     font-family: 'Inter', Helvetica, sans-serif;
     font-weight: 400;
@@ -36,10 +37,10 @@ a {
     width: 100vw;
     display: grid;
     /* #grid templates are the best */
-    grid-template-areas: 
-    'header' 
-    'main' 
-    'main';
+    grid-template-areas:
+        'header'
+        'main'
+        'main';
     /* mostly to leave room for a footer if we wanted to work on error messages */
     grid-template-rows: 8vh auto;
 }
@@ -49,10 +50,10 @@ a {
     width: 100vw;
     display: grid;
     /* #grid templates are the best */
-    grid-template-areas: 
-    'header' 
-    'main' 
-    'main';
+    grid-template-areas:
+        'header'
+        'main'
+        'main';
     background-color: #F4F4F4;
     grid-template-rows: 8vh auto;
 }
@@ -79,11 +80,11 @@ nav {
 
 /* Left Grid */
 
-#mainGrid {	
-    display: flex;	
-    justify-content: center;	
-    align-content: center;	
-    height: 100%;	
+#mainGrid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
 }
 
 .main {
@@ -125,8 +126,9 @@ h3 {
     height: 50px;
     padding: 0 25px;
 }
-.textBox:focus{
-    outline:none;
+
+.textBox:focus {
+    outline: none;
 }
 
 #buttonDiv {
@@ -150,13 +152,13 @@ h3 {
 
 .buttonActive {
     border: none;
-    background-color:#79426A;
+    background-color: #79426A;
     color: white;
 }
 
 .formSubmit:hover {
     text-decoration: none;
-    background-color:#79426A;
+    background-color: #79426A;
     color: white;
 }
 
@@ -168,7 +170,7 @@ h3 {
 /* APP PAGE */
 
 .addButton {
-    background-color: #79426A!important;
+    background-color: #79426A !important;
     border-radius: 26px;
     padding: 10px;
     color: #ffffff;
@@ -222,30 +224,42 @@ h3 {
     margin: 30px;
     padding-top: 20px;
     background-color: #FFFFFF;
-    min-width: 400px;
+    min-width: 300px;
     border-radius: 20px;
     align-items: center;
     text-align: center;
 }
+
 #flexcard h2 {
     font-size: 20px;
     font-weight: 700;
 }
-#flexCard{
+
+#flexCard {
     width: 40vw;
     min-width: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
- justify-items: center;
+    justify-items: center;
+    align-items: center;
     text-align: center;
 }
-#flexCard div{
+
+#flexCard div {
     margin: 0;
     min-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#addMealButton {
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 15px;
 }
 
 #mealCards {
@@ -257,10 +271,18 @@ h3 {
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 7px 20px 7px 15px;
+<<<<<<< HEAD
     max-height: 44px;
+=======
+    max-height: 35px;
+
+    position: relative;
+    left: 20px;
+>>>>>>> 30e68d4091a937b04056c37355de387841fa0cf7
 }
 
-.card input:focus, .addIngButt:focus{
+.card input:focus,
+.addIngButt:focus {
     outline: none;
 }
 
@@ -283,7 +305,29 @@ h3 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .person{
+=======
+/* Tablet */
+
+@media screen and (max-width: 1000px) {}
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    .formTitle {
+        visibility: hidden;
+        height: 0;
+    }
+
+    #buttonDiv .formTitle {
+        visibility: visible;
+        height: inherit;
+    }
+}
+
+.person {
+>>>>>>> 30e68d4091a937b04056c37355de387841fa0cf7
     position: absolute;
     left: 12vw;
     width: 200px;
@@ -291,7 +335,7 @@ h3 {
     transition: 0.5s cubic-bezier(0,.49,.41,1.02);
 }
 
-.egg{ 
+.egg {
     position: absolute;
     left: 0;
     width: 400px;
@@ -301,7 +345,7 @@ h3 {
     transition: 0.5s cubic-bezier(0,.49,.41,1.02);
 }
 
-.milk{
+.milk {
     position: absolute;
     right: 0;
     width: 200px;
@@ -311,7 +355,7 @@ h3 {
     transition: 0.5s cubic-bezier(0,.49,.41,1.02);
 }
 
-.bread{
+.bread {
     position: absolute;
     right: 4vw;
     width: 300px;
