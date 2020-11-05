@@ -556,3 +556,23 @@
         width: 50%;
         margin: 0 25%;
     }
+
+#meals {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 0 40%;
+}
+
+.card-body-app {
+    padding-left: 1em;
+    margin: 2em 0;
+}
+
+.appCard {
+    text-align: left;
+}
+
+.mealImage {
+    margin: 1em 0;
+}
