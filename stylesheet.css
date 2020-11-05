@@ -10,6 +10,7 @@
   font-family: 'Inter-medium', Helvetica, sans-serif;
 }
 
+
 footer {
   margin-top: 25vh;
 }
@@ -102,6 +103,18 @@ a {
   max-width: 500px;
   margin: auto;
   text-align: center;
+}
+
+.btn.btn-primary{
+  background-color: transparent;
+  width: 140px;
+  margin: 12px;
+  border-radius: 0;
+  color: #707070;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
 }
 
 
