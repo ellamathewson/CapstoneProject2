@@ -1,518 +1,486 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-* {
-    font-family: 'Inter', Helvetica, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-
-/* LOGIN AND SIGNIN PAGES */
-
-a {
-    font-weight: 700;
-}
-
-
-/* Grid Alignment Webpage*/
-
-#leftGrid {
-    grid-area: leftmost;
-}
-
-#mainGrid {
-    grid-area: main;
-}
-
-#headerBar {
-    grid-area: header;
-}
-
-#gridContainer {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    /* #grid templates are the best */
-    grid-template-areas:
-        'header'
-        'main'
-        'main';
-    /* mostly to leave room for a footer if we wanted to work on error messages */
-    grid-template-rows: 8vh auto;
-}
-
-#accountContainer {
-    height: auto;
-    width: 100vw;
-    display: grid;
-    /* #grid templates are the best */
-    grid-template-areas:
-        'header'
-        'main'
-        'main';
-    background-color: #F4F4F4;
-    grid-template-rows: 8vh auto;
-}
-
-
-/* Header */
-
-#headerBar {
-    height: 8vh;
-    min-height: 70px;
-    margin: 0;
-    background-color: #79426A;
-    border-radius: 0;
-}
-
-#logo:hover {
-    cursor: pointer;
-}
-
-#posts {
-    color: black;
-}
-
-
-/* Left Grid */
-
-#mainGrid {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
-
-.main {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-}
-
-.entryForm {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    min-width: 300px;
-    max-width: 400px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-h3 {
-    color: #79426A !important;
-    font-weight: 700 !important;
-}
-
-.formTitle {
-    color: gray;
-    margin: 10px 10px 0;
-}
-
-.textBox {
-    background: #f2f2f2;
-    border: none;
-    border-radius: 50px;
-    margin: 10px 0 0;
-    height: 50px;
-    padding: 0 25px;
-}
-
-.textBox:focus {
-    outline: none;
-}
-
-#buttonDiv {
-    margin-top: 2em;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.formSubmit {
-    border: 2px solid #79426A;
-    border-radius: 50px;
-    height: 50px;
-    padding: 15px;
-    text-align: center;
-    color: #79426A;
-    margin: 10px 0 0;
-}
-
-.buttonActive {
-    border: none;
-    background-color: #79426A;
-    color: white;
-}
-
-.formSubmit:hover {
-    text-decoration: none;
-    background-color: #79426A;
-    color: white;
-}
-
-.buttonActive:hover {
-    text-decoration: none;
-}
-
-
-/* APP PAGE */
-
-.addButton {
-    background-color: #79426A !important;
-    border-radius: 26px;
-    padding: 10px;
-    color: #ffffff;
-}
-
-.addIngredientButton {
-    background-color: #BFE8F0 !important;
-    border: none !important;
-    color: black !important;
-    box-shadow: none !important;
-}
-
-.addFoodForm {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 5%;
-}
-
-#listed {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-}
-
-#inputPassword2 {
-    border-radius: 50px !important;
-    background-color: #F2F2F2 !important;
-}
-
-
-.ingredItem {
-    background-color: #F2F2F2;
-    color: black;
-    border: none;
-    width: 10%;
-    padding: 1em;
-    text-align: center;
-}
-
-.ingredItem:hover {
-    background-color: red;
-}
-
-
-/* cards */
-
-.card {
-    margin: 30px;
-    padding-top: 20px;
-    background-color: #FFFFFF;
-    min-width: 300px;
-    border-radius: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-#flexcard h2 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-#flexCard {
-    width: 40vw;
-    min-width: 300px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-
-#flexCard div {
-    margin: 0;
-    min-width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#addMealButton {
-    width: 200px;
-    height: 45px;
-    border-radius: 25px;
-    font-size: 15px;
-}
-
-#mealCards {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.card input {
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    padding: 7px 20px 7px 15px;
-    max-height: 44px;
-}
-
-.card input:focus,
-.addIngButt:focus {
-    outline: none;
-}
-
-.addIngButt {
-    padding: 9px 10px 8px 7px;
-    font-size: 27px;
-    border-radius: 25px;
-
-    background-color: #007F97;
-    color: white;
-    border: 4px solid white;
-
-    position: relative;
-    left: -20px;
-}
-
-#remTap {
-    color: #9F9f9f;
-    align-items: center;
-    text-align: center;
-}
-
-.person{
-    position: absolute;
-    left: 12vw;
-    width: 200px;
-    bottom: 0;
-    transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-}
-
-.egg {
-    position: absolute;
-    left: 0;
-    width: 400px;
-    bottom: 0;
-    z-index: -1;
-    animation: 1s move-in-left cubic-bezier(0,.49,.41,1.02);
-    transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-}
-
-.milk {
-    position: absolute;
-    right: 0;
-    width: 200px;
-    bottom: 0;
-    z-index: -1;
-    animation: 1s move-in-right cubic-bezier(0,.49,.41,1.02);
-    transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-}
-
-.bread {
-    position: absolute;
-    right: 4vw;
-    width: 300px;
-    bottom: 0;
-    transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-}
-
-#addMealCard, #mealCards{
-    border-radius: 24px;
-    border:none;
-    margin-bottom: 0;
-    height: auto;
-}
-
-#addMealCard .addmealbutton{
-    height: 44px;
-    border-radius: 44pt;
-    max-width: 178px;
-    margin: auto;
-    width: 100%;
-    background-color: #79426A;
-    color: white;
-    margin-top: 32px;
-    margin-bottom: 0;
-}
-
-#addMealCard {
-    padding-bottom: 50px;
-}
-
-.breif{
-    margin-top: 32px;
-    height: auto;
-    text-align: center;
-}
-
-.breif h1{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.breif h2{
-    font-size: 16px;
-}
-
-.logotext{
-    display: inline;
-}
-
-
-@keyframes move-in-left{
-    0%{
-        left: -100%;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    * {
+        font-family: 'Inter', Helvetica, sans-serif;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
     }
-
-    100%{
-        left: 0;
+    /* LOGIN AND SIGNIN PAGES */
+    
+    a {
+        font-weight: 700;
     }
-}
-
-@keyframes move-in-right{
-    0%{
-        right: -100%;
-    }
-
-    100%{
-        right: 0;
-    }
-}
-
-/* Tablet */
-
-@media screen and (max-width: 1000px) {
-    .person{
-        width: 150px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-    }
-
-    .logotext{
-        display: none;
+    /* Grid Alignment Webpage*/
+    
+    #leftGrid {
+        grid-area: leftmost;
     }
     
-    .egg{ 
-        width: 300px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+    #mainGrid {
+        grid-area: main;
     }
     
-    .milk{
-        width: 100px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+    #headerBar {
+        grid-area: header;
     }
     
-    .bread{
-        width: 150px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
-    }
-}
-
-/* Mobile */
-@media screen and (max-width: 400px) {
-    .formTitle{
-        visibility: hidden;
-        height: 0;
-    }
-
-    #buttonDiv .formTitle{
-        visibility: visible;
-        height: inherit;
-    }
-
-    .logotext{
-        display: none;
-    }
-
-    .person{
-        width: 100px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+    #gridContainer {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        /* #grid templates are the best */
+        grid-template-areas: 'header' 'main' 'main';
+        /* mostly to leave room for a footer if we wanted to work on error messages */
+        grid-template-rows: 8vh auto;
     }
     
-    .egg{ 
+    #accountContainer {
+        height: auto;
+        width: 100vw;
+        display: grid;
+        /* #grid templates are the best */
+        grid-template-areas: 'header' 'main' 'main';
+        background-color: #e4e4e4;
+        grid-template-rows: 8vh auto;
+    }
+    /* Header */
+    
+    #headerBar {
+        height: 8vh;
+        min-height: 70px;
+        margin: 0;
+        background-color: #79426A;
+        border-radius: 0;
+    }
+    
+    #logo:hover {
+        cursor: pointer;
+    }
+    
+    #posts {
+        color: black;
+    }
+    /* Left Grid */
+    
+    #mainGrid {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+    }
+    
+    .main {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .entryForm {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        min-width: 300px;
+        max-width: 400px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h3 {
+        color: #79426A !important;
+        font-weight: 700 !important;
+    }
+    
+    .formTitle {
+        color: gray;
+        margin: 10px 10px 0;
+    }
+    
+    .textBox {
+        background: #f2f2f2;
+        border: none;
+        border-radius: 50px;
+        margin: 10px 0 0;
+        height: 50px;
+        padding: 0 25px;
+    }
+    
+    .textBox:focus {
+        outline: none;
+    }
+    
+    #buttonDiv {
+        margin-top: 2em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+    .formSubmit {
+        border: 2px solid #79426A;
+        border-radius: 50px;
+        height: 50px;
+        padding: 15px;
+        text-align: center;
+        color: #79426A;
+        margin: 10px 0 0;
+    }
+    
+    .buttonActive {
+        border: none;
+        background-color: #79426A;
+        color: white;
+    }
+    
+    .formSubmit:hover {
+        text-decoration: none;
+        background-color: #79426A;
+        color: white;
+    }
+    
+    .buttonActive:hover {
+        text-decoration: none;
+    }
+    /* APP PAGE */
+    
+    .addButton {
+        background-color: #79426A !important;
+        border-radius: 26px;
+        padding: 10px;
+        color: #ffffff;
+    }
+    
+    .addIngredientButton {
+        background-color: #BFE8F0 !important;
+        border: none !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    .addFoodForm {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    #listed {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    
+    #inputPassword2 {
+        border-radius: 50px !important;
+        background-color: #F2F2F2 !important;
+    }
+    
+    .ingredItem {
+        background-color: #F2F2F2;
+        color: black;
+        border: none;
+        width: 10%;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    .ingredItem:hover {
+        background-color: red;
+    }
+    /* cards */
+    
+    .cards {
+        margin: 30px;
+        padding-top: 20px;
+        background-color: #FFFFFF;
+        min-width: 300px;
+        border-radius: 20px;
+        /* align-items: center; */
+        text-align: center;
+    }
+    
+    #flexcard h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #flexCard {
+        /* width: 40vw; */
+        min-width: 300px;
+        height: 100%;
+        display: block;
+        /* flex-direction: column; */
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #flexCard div {
+        margin: 0;
+        min-width: 300px;
+        /* display: flex;
+        flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #addMealButton {
         width: 200px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+        height: 45px;
+        border-radius: 25px;
+        font-size: 15px;
     }
     
-    .milk{
-        width: 100px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+    #content {
+        background-color: #e4e4e4
     }
     
-    .bread{
-        width: 150px;
-        transition: 0.5s cubic-bezier(0,.49,.41,1.02);
+    #mealCards {
+        display: flex;
+        flex-flow: row wrap;
     }
     
-}
-
-.dataCode {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    justify-content: center;
-    padding: 10px;
-}
-
-.dataCode p {
-    margin: 0 5px;
-}
-
-.codeBox {
-    width: 50%;
-    margin: 0 25%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-link {
-    color: white !important;
-}
-
-.active {
-    border-bottom: 2px solid white;
-}
-
-.nav-link:hover {
-    border-bottom: 2px solid white;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    height: 2vh;
-}
-
-.dataCards {
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    border-radius: 20px !important;
-}
-
-#titleDiv {
-    width: 50%;
-    margin: 1% 25%;
-    margin-top: 2%;
-}
+    .cards input {
+        background-color: #f2f2f2;
+        border-radius: 25px;
+        padding: 7px 20px 7px 15px;
+        max-height: 44px;
+    }
+    
+    .cards input:focus,
+    .addIngButt:focus {
+        outline: none;
+    }
+    
+    .addIngButt {
+        padding: 9px 10px 8px 7px;
+        font-size: 27px;
+        border-radius: 25px;
+        background-color: #007F97;
+        color: white;
+        border: 4px solid white;
+        position: relative;
+        left: -20px;
+    }
+    
+    #remTap {
+        color: #9F9f9f;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .person {
+        position: absolute;
+        left: 12vw;
+        width: 200px;
+        bottom: 0;
+        transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+    }
+    
+    .egg {
+        position: absolute;
+        left: 0;
+        width: 400px;
+        bottom: 0;
+        z-index: -1;
+        animation: 1s move-in-left cubic-bezier(0, .49, .41, 1.02);
+        transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+    }
+    
+    .milk {
+        position: absolute;
+        right: 0;
+        width: 200px;
+        bottom: 0;
+        z-index: -1;
+        animation: 1s move-in-right cubic-bezier(0, .49, .41, 1.02);
+        transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+    }
+    
+    .bread {
+        position: absolute;
+        right: 4vw;
+        width: 300px;
+        bottom: 0;
+        transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+    }
+    
+    #addMealCard,
+    #mealCards {
+        border-radius: 24px;
+        border: none;
+        /* margin-bottom: 0; */
+        height: auto;
+    }
+    
+    #addMealCard .addmealbutton {
+        height: 44px;
+        border-radius: 44pt;
+        max-width: 178px;
+        margin: auto;
+        width: 100%;
+        background-color: #79426A;
+        color: white;
+        margin-top: 32px;
+        /* margin-bottom: 0; */
+    }
+    
+    #addMealCard {
+        padding-bottom: 50px;
+    }
+    
+    .breif {
+        margin-top: 32px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .breif h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .breif h2 {
+        font-size: 16px;
+    }
+    
+    .logotext {
+        display: inline;
+    }
+    
+    @keyframes move-in-left {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    
+    @keyframes move-in-right {
+        0% {
+            right: -100%;
+        }
+        100% {
+            right: 0;
+        }
+    }
+    /* Tablet */
+    
+    @media screen and (max-width: 1000px) {
+        .person {
+            width: 150px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .logotext {
+            display: none;
+        }
+        .egg {
+            width: 300px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .milk {
+            width: 100px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .bread {
+            width: 150px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+    }
+    /* Mobile */
+    
+    @media screen and (max-width: 400px) {
+        .formTitle {
+            visibility: hidden;
+            height: 0;
+        }
+        #buttonDiv .formTitle {
+            visibility: visible;
+            height: inherit;
+        }
+        .logotext {
+            display: none;
+        }
+        .person {
+            width: 100px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .egg {
+            width: 200px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .milk {
+            width: 100px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+        .bread {
+            width: 150px;
+            transition: 0.5s cubic-bezier(0, .49, .41, 1.02);
+        }
+    }
+    
+    .dataCode {
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .dataCode p {
+        margin: 0 5px;
+    }
+    
+    .codeBox {
+        width: 50%;
+        margin: 0 25%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        color: white !important;
+    }
+    
+    .active {
+        border-bottom: 2px solid white;
+    }
+    
+    .nav-link:hover {
+        border-bottom: 2px solid white;
+    }
+    
+    .card-body {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        height: 2vh;
+    }
+    
+    .dataCards {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card {
+        border-radius: 20px !important;
+    }
+    
+    #titleDiv {
+        width: 50%;
+        margin: 1% 25%;
+        margin-top: 2%;
+    }
