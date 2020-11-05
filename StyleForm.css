@@ -231,6 +231,65 @@
         min-width: 300px;
         align-items: center;
     }
+    /* The container */
+    
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Hide the browser's default radio button */
+    
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .checked {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #urgReact,
+    #painReact,
+    #unReact,
+    #noReact {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    
+    #urgReact:hover,
+    #painReact:hover,
+    #unReact:hover,
+    #noReact:hover {
+        background-color: #F3F3F3;
+    }
+    
+    #urgReact {
+        background-color: #BE2541;
+    }
+    
+    #painReact {
+        background-color: #D47B12;
+    }
+    
+    #unReact {
+        background-color: #D7C316;
+    }
+    
+    #noReact {
+        background-color: #14A470;
+    }
     
     #addMealButton {
         width: 200px;
@@ -487,13 +546,12 @@
         margin: 1% 25%;
         margin-top: 2%;
     }
-
     
     .card {
         padding: 1em 2em 0 3em;
         margin: 2em;
     }
-
+    
     #cardFilter {
         width: 50%;
         margin: 0 25%;
