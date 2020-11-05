@@ -92,6 +92,21 @@ a {
   cursor: default;
 }
 
+.filterLabel{
+  background: #79426A;
+  height: 44px;
+  width: 200px;
+}
+
+#cardFilter{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;

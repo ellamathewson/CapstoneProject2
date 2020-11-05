@@ -70,22 +70,31 @@
                         data-target="#exampleModal">Add Meal</button>
                 </div>
             </div>
-            <div class="breif">
-                <h1>Check out what you ate previously</h1>
-                <h2>Tap on the cards to show the full ingredient list</h2>
-            </div>
             <div id=cardFilter>
                 <h2>Check out what you ate previously</h2>
                 <p>Tap on the cards to show the full ingredient list</p>
-                <div id=filterLabel>
-                    <input type="radio" id="dateFilter" name="filter" value="date">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked> DATE
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> A TO Z
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option3"> Reaction
+                    </label>
+                  </div>
+                <!-- <div id=filterLabel>
+                    <input class="filterbutton" type="radio" id="dateFilter" name="filter" value="date">
                     <label for="male">DATE</label><br>
-                    <input type="radio" id="AtoZ" name="filter" value="AtoZ">
+                    <input class="filterbutton" type="radio" id="AtoZ" name="filter" value="AtoZ">
                     <label for="female">A TO Z</label><br>
-                    <input type="radio" id="reactionFilter" name="filter" value="reaction">
+                    <input class="filterbutton" type="radio" id="reactionFilter" name="filter" value="reaction">
                     <label for="other">Reaction</label>
-                </div>
+                </div> -->
             </div>
+
+            
 
             <div id=mealCards class=cards>
                 <div class="main">
