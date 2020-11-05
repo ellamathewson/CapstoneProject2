@@ -63,10 +63,14 @@ a {
 
 #headerBar {
     height: 8vh;
-    min-height: 50px;
+    min-height: 70px;
     margin: 0;
     background-color: #79426A;
     border-radius: 0;
+}
+
+#logo:hover {
+    cursor: pointer;
 }
 
 #posts {
@@ -460,4 +464,16 @@ h3 {
     flex-direction: row;
     width: 50%;
     justify-content: center;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.active {
+    color: #007F97 !important;
+}
+
+.nav-link:hover {
+    color: #007F97 !important;
 }
