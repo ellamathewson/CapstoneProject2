@@ -24,9 +24,7 @@
     <!-- Navigation -->
     <nav id="headerBar">
         <div class="topnav" id="myTopnav">
-            <a class="logo" href="app.html"> <img src="imgs/logo.svg"
-                    style="margin-left: 32px; position: relative; top: -6px; margin-right: 12px;" width="40px" alt="logo"><span
-                    class="logotext">Allergy Attention</span></a>
+            <a class="logo" href="app.html"> <img src="imgs/logo.svg" style="margin-left: 32px; position: relative; top: -6px; margin-right: 12px;" width="40px" alt="logo"><span class="logotext">Allergy Attention</span></a>
             <a href="app.html" class="active">Home</a>
             <a href="account.html">Account</a>
             <a href="data.html">Data</a>
@@ -49,9 +47,7 @@
                     <h2>Input ingredients from your meal</h2>
 
                     <div>
-                        <input
-                            style="margin-top: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 295px;"
-                            class="textbox" placeholder="add ingredient">
+                        <input style="margin-top: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 295px;" class="textbox" placeholder="add ingredient">
                         <button class=addIngButt>
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-left"
                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -66,14 +62,10 @@
                     </div>
 
                     <!-- Button trigger modal -->
-                    <button class="addmealbutton" type="button" class="btn btn-primary addButton" data-toggle="modal"
-                        data-target="#exampleModal">Add Meal</button>
+                    <button class="addmealbutton" type="button" class="btn btn-primary addButton" data-toggle="modal" data-target="#exampleModal">Add Meal</button>
                 </div>
             </div>
-            <div class="breif">
-                <h1>Check out what you ate previously</h1>
-                <h2>Tap on the cards to show the full ingredient list</h2>
-            </div>
+
             <div id=cardFilter>
                 <h2>Check out what you ate previously</h2>
                 <p>Tap on the cards to show the full ingredient list</p>
@@ -99,47 +91,12 @@
 
                         <section id="meals">
                             <div className="mealList">
-                                <h3 className="empty">NO FOOD HAS BEEN ADDED</h3>
+                                <h3 className="empty">NO MEALS HAVE BEEN ADDED</h3>
                             </div>
                         </section>
                     </div>
                 </div>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Make Tracking Allergins Easier</h5>
-
-                        </div>
-                        <div class="modal-body addFoodForm">
-                            <form class="form-inline">
-                                <div class="form-group mx-sm-3 mb-2">
-                                    <input type="password" class="form-control" id="inputPassword2">
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-2 addIngredientButton">&#8592;</button>
-                            </form>
-                            <div id="listed">
-                                <p>Tap to remove ingredients:</p>
-
-                                <div id="listedIngred">
-                                    <button class="ingredItem">Milk</button>
-                                    <button class="ingredItem">Eggs</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
 
             <!-- Search Widget -->
             <!-- <div class="search">
@@ -154,7 +111,6 @@
     <!-- </div> -->
 
 
-    <!-- /.container -->
 
     <div id="errorModal">
         <div class="modal fade" id="searchEmpty" tabindex="-1" role="dialog">
