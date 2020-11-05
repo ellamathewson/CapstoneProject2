@@ -46,7 +46,7 @@ a {
 }
 
 #accountContainer {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: grid;
     /* #grid templates are the best */
@@ -353,6 +353,10 @@ h3 {
     margin-bottom: 0;
 }
 
+#addMealCard {
+    padding-bottom: 50px;
+}
+
 .breif{
     margin-top: 32px;
     height: auto;
@@ -505,4 +509,10 @@ h3 {
 
 .card {
     border-radius: 20px !important;
+}
+
+#titleDiv {
+    width: 50%;
+    margin: 1% 25%;
+    margin-top: 2%;
 }
