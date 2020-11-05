@@ -88,3 +88,11 @@ h3 {
 .addButton {
     background-color: #007F97;
 }
+
+#cardFilter{
+    background-color: gainsboro;
+}
+
+#cardFilter h2{
+    text-align: center;
+}

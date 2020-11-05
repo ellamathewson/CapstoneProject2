@@ -10,6 +10,7 @@
   font-family: 'Inter-medium', Helvetica, sans-serif;
 }
 
+
 footer {
   margin-top: 25vh;
 }
@@ -91,6 +92,33 @@ a {
   text-decoration: none;
   cursor: default;
 }
+
+.filterLabel{
+  background: #79426A;
+  height: 44px;
+  width: 200px;
+}
+
+#cardFilter{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn.btn-primary{
+  background-color: transparent;
+  width: 140px;
+  margin: 12px;
+  border-radius: 0;
+  color: #707070;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
