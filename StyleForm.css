@@ -484,3 +484,14 @@
         margin: 1% 25%;
         margin-top: 2%;
     }
+
+    
+    .card {
+        padding: 1em 2em 0 3em;
+        margin: 2em;
+    }
+
+    #cardFilter {
+        width: 50%;
+        margin: 0 25%;
+    }
