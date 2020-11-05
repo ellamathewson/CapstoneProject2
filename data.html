@@ -1,266 +1,281 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Allergy Attention</title>
-  <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
-  <link rel="shortcut icon" href="/assets/img/peanutFavicon.png" />
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-  <link rel="stylesheet" type="text/css" href="StyleForm.css" />
+    <meta charset="utf-8" />
+    <title>Allergy Attention</title>
+    <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="StyleForm.css" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <!-- Bootstrap Template from https://getbootstrap.com/docs/4.0/components/alerts/ -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Template from https://getbootstrap.com/docs/4.0/components/alerts/ -->
 </head>
 
 <body>
-  <div id="gridContainer">
-    <nav id="headerBar">
-      <div class="topnav" id="myTopnav">
-        <a href="app.html" id="title" class="logo">Allergy Attention</a>
-        <a href="app.html">Home</a>
-        <a href="account.html">Account</a>
-        <a href="data.html" class="active">Data</a>
-        <a href="index.html">Logout</a>
-        <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
-          <div class="hamburger">
-            <div class="hambugerbar"></div>
-            <div class="hambugerbar"></div>
-            <div class="hambugerbar"></div>
-        </div>
-        </a>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div id="leftGrid" style="display:none">
-      <content class="appPage">
-        <!-- Sidebar Widgets Column -->
-        <div class="sidebar" style="display:none">
-          <!-- Categories Widget -->
-          <div class="sort">
-            <h3>Ingredient List:</h3>
-            <div class="pickSort">
-              {{#if displayFood}}
-              {{#each displayFood}}
-              <h2>{{this.level}}</h2>
-              <h4>{{this.ingredients}}</h4>
-              {{/each}}
-              {{/if}}
+    <div id="accountContainer">
+        <!-- Navigation -->
+        <nav id="headerBar">
+            <div class="topnav" id="myTopnav">
+                <a class="logo" href="app.html" id="title">Allergy Attention</a>
+                <a href="app.html">Home</a>
+                <a href="account.html">Account</a>
+                <a href="data.html" class="active">Data</a>
+                <a href="index.html">Logout</a>
+                <a href="javascript:void(0);" class="icon" onclick="openHamburgerMenu()">
+                    <div class="hamburger">
+                        <div class="hambugerbar"></div>
+                        <div class="hambugerbar"></div>
+                        <div class="hambugerbar"></div>
+                    </div>
+                </a>
             </div>
-          </div>
+        </nav>
+        <!-- If someone wants to mess with this be my guest -->
+        <div>
+
         </div>
+
+
+        <!-- Page Content -->
+        <div id=addMealCard class=card>
+            <div id="flexCard">
+                <h2>Find Ingredients:</h2>
+
+                <div>
+                    <input
+                        style="margin-top: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 295px;"
+                        class="textbox" placeholder="add ingredient">
+                    <button class=addIngButt>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-left"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="breif">
+            <h1>Check out what you ate previously</h1>
+            <div class="dataCode">
+              <svg version="1.1"
+                baseProfile="full"
+                width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="#BE2541" />
+              </svg>
+            <p>Urgent Care</p>
+            </div>
+
+            <div class="dataCode">
+              <svg version="1.1"
+                baseProfile="full"
+                width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="#E5B712" />
+              </svg>
+            <p>Uncomfortable</p>
+            </div>
+
+            <div class="dataCode">
+              <svg version="1.1"
+                baseProfile="full"
+                width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="#D47B12" />
+              </svg>
+            <p>Painful</p>
+            </div>
+
+            <div class="dataCode">
+              <svg version="1.1"
+                baseProfile="full"
+                width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="#14A470" />
+              </svg>
+            <p>No Reaction</p>
+            </div>
+            
+        </div>
+
+        <div id=mealCards class=card>
+            <div class="main">
+                <!-- Blog Entries Column -->
+                <div id="posts">
+                    <h1>Allergy Attention</h1>
+                    <!-- Blog Post -->
+                    <div class="tag" onclick="removeSearch()">
+                        <h5>Tag</h5>
+                    </div>
+
+                    <section id="meals">
+                        <div className="mealList">
+                            <h3 className="empty">No Meals Yet</h3>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Make Tracking Allergins Easier</h5>
+
+                    </div>
+                    <div class="modal-body addFoodForm">
+                        <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input type="password" class="form-control" id="inputPassword2">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2 addIngredientButton">&#8592;</button>
+                        </form>
+                        <div id="listed">
+                            <p>Tap to remove ingredients:</p>
+
+                            <div id="listedIngred">
+                                <button class="ingredItem">Milk</button>
+                                <button class="ingredItem">Eggs</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Widget -->
+        <!-- <div class="search">
+      <h3>Search</h3>
+        <form class="searchBar" name="searchForm" method="GET">
+          <input type="text" class="form-control" id="searchInput" placeholder="Search for...">
+          <button class="formSubmit" type="button" onclick="searchData()">Go</button>
+          </form>
+         </div> -->
     </div>
 
-    <!-- Sidebar listing out data -->
 
-    <div id="mainGrid">
-      <div class="main">
-        <br>
-        <h3>About:</h3>
-        <br>
-        <p>Tracking food allergies can be difficult. These charts were made
-          to display data in a way easy to understand.
-          <br><br>
-          The Data chart tracks the reactions. The Food Breakdown chart tracks
-          the ingredients you've listed. So comparing them you can see the
-          majority of the reactions you have and the most common food you eat,
-          thus being able to put together an idea of foods you should avoid.
-          In doing so you can experiment with yourself and find what foods
-          you should avoid.</p>
-        <br>
-        <div id="analysis">
-          <h3>Data:</h3>
-          <br><br>
-          <canvas id="myChart"></canvas>
-          <br><br>
-          <h3>Food Breakdown:</h3>
-          <canvas id="barChart"></canvas>
-          <br><br>
-        </div>
-        <div id="noData">
-          <h3>No data added yet</h3>
-        </div>
-
-        <!-- Blog Entries Column -->
-      </div>
-    </div>
-    </content>
     <!-- /.container -->
-  </div>
 
-  <script>
-    // sets up donut chart using chart.js
-    let ctx = document.getElementById('myChart').getContext('2d');
+    <div id="errorModal">
+        <div class="modal fade" id="searchEmpty" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchEmptyLabel">Error: No results for ${input} found</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="removeSearch()">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    // grabs all names from list on side
-    const userData = document.querySelectorAll('h2');
+    <script>
+        const searchData = () => {
+            // grabs searchbar input
+            let input = document.getElementById("searchInput").value;
 
-    // category numbers set at 0
-    let noPain = 0;
-    let mildDis = 0;
-    let painful = 0;
-    let urgent = 0;
-    console.log(`userdata ${userData}`);
+            input = input.toLowerCase();
+            input = input.trim();
 
-    // adds 1 to each category when listed to display on chart
-    userData.forEach((item) => {
-      console.log(`item innerHTML ${item.innerHTML}`);
-      switch (item.innerHTML) {
-        case "Urgent Care":
-          urgent += 1;
-          break;
-        case "Painful":
-          painful += 1;
-          break;
-        case "Mild Discomfort":
-          mildDis += 1;
-          break;
-        case "No Pain":
-          noPain += 1;
-          break;
-        default:
-          break;
-      }
-    });
+            //grabs tag element
+            let tag = document.querySelector(".tag");
 
-    // sets up array using data grabbed above
-    let allData = [urgent, painful, mildDis, noPain];
+            // grabs all the cards on screen
+            let cardElements = document.querySelectorAll(".card");
 
-    // sets up chart 
-    let myDoughnutChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        datasets: [{
-          label: 'Data',
-          data: allData,
-          backgroundColor: ["#cc3300", "#ff9966", "#ffcc00", "#99cc33"],
-        }],
+            let itemsDisplaying = false;
 
-        // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: [
-          'Urgent',
-          'Painful',
-          'Mild Discomfort',
-          'No Pain'
-        ]
-      },
-      options: {}
-    });
+            //for each card,
+            cardElements.forEach(card => {
+                //if title matches input, display and show tag
+                let title = card.querySelector("h2").innerHTML;
+                title = title.toLowerCase();
 
-    const foodData = document.querySelectorAll('h4');
-    const h4Array = [];
-    const foodArray = [];
-    const foodOccuranceArray = [];
+                let ingred = card.querySelector("#ingred").innerHTML;
+                ingred = ingred.toLowerCase();
+                ingred = ingred.split(",");
 
-    /* https://stackoverflow.com/questions/37365512/count-the-number-of-times-a-same-value-appears-in-a-javascript-array */
-    const getOccurrence = (array, value) => {
-      let count = 0;
-      array.forEach((v) => (v === value && count++));
-      return count;
-    }
+                ingred.forEach(item => {
+                    item = item.trim();
+                    if (title == input) {
+                        itemsDisplaying = true;
+                        card.style.display = "block";
+                        tag.querySelector("h5").innerHTML = input;
+                        tag.style.display = "block";
+                        //if not, set the display to none
+                    } else if (item == input) {
+                        itemsDisplaying = true;
+                        console.log(card);
+                        card.style.display = "block";
+                        tag.querySelector("h5").innerHTML = input;
+                        tag.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
 
-    foodData.forEach((item) => {
-      h4Array.push(item.innerHTML.split(','));
-    });
-
-    h4Array.forEach((food) => {
-      food.forEach((item) => {
-        console.log(`fooditem ${item}`);
-        item = item.trim();
-        foodArray.push(item);
-        foodOccuranceArray.push(getOccurrence(foodArray, item));
-      });
-    });
-
-    console.log(`foodarray ${foodArray}`);
-    console.log(`food occurance ${foodOccuranceArray}`);
-
-    let ctx2 = document.getElementById('barChart').getContext('2d');
-
-    var myBarChart = new Chart(ctx2, {
-      type: 'bar',
-      data: {
-        labels: foodArray,
-        datasets: [{
-          label: 'Number of times tracked',
-          data: foodOccuranceArray,
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-              stepSize: 1,
+            if (itemsDisplaying == false) {
+                console.log("nothing on screen");
+                $('#searchEmpty').modal('show');
             }
-          }]
         }
+
+        const removeSearch = () => {
+            $('#searchEmpty').modal('hide');
+            let tag = document.querySelector(".tag");
+
+            let cardElements = document.querySelectorAll(".card");
+
+            cardElements.forEach(card => {
+                card.style.display = "block";
+                tag.style.display = "none";
+            });
+        }
+
+        const showData = () => {
+            window.location.href = "/data";
+        }
+    </script>
+
+    <!-- <script src="/assets/appBundle.js"></script> -->
+
+    <script>
+        function openHamburgerMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <style>
+        /* @media screen and (min-width: 375px) {
+      body {
+        background-color: lightblue;
       }
-    });
-
-    if (userData.length == 0) {
-      document.querySelector('#analysis').style.display = "none";
-      document.querySelector('#noData').style.display = "block";
-    } else {
-      document.querySelector('#analysis').style.display = "block";
-      document.querySelector('#noData').style.display = "none";
-    }
-  </script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="/assets/appBundle.js"></script>
-
-  <script>
-    // hamburger menu functionality when screen is smaller
-    function openHamburgerMenu() {
-      let x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="/assets/appBundle.js"></script>
-
-  <script>
-    // hamburger menu functionality when screen is smaller
-    function openHamburgerMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+    } */
+    </style>
 </body>
 
 </html>
