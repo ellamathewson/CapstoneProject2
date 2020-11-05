@@ -494,6 +494,12 @@ h3 {
     border-bottom: 2px solid white;
 }
 
+.collapse {
+    background: #79426A;
+    color: white;
+    z-index: 1;
+}
+
 .card-body {
     display: flex;
     flex-direction: row;
